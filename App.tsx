@@ -5,14 +5,10 @@ const App = (props: any) => {
   // this flag tell me to open app from superApp or normally
   const isFromSuperApp = props?.route?.params?.isFromSuperApp ?? false;
   return isFromSuperApp ? (
-    <RootStack
-      initialProps={{ color: props?.route?.params?.color ?? 'teal' }}
-    />
+    <RootStack initialProps={{ nativeParams: props?.route?.params }} />
   ) : (
     <NavigationContainer>
-      <RootStack
-        initialProps={{ color: props?.route?.params?.color ?? 'teal' }}
-      />
+      <RootStack initialProps={{ nativeParams: props?.route?.params }} />
     </NavigationContainer>
   );
 };
