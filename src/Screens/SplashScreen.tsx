@@ -9,7 +9,7 @@ const SplashScreen = () => {
       navigation.dispatch(
         CommonActions.reset({
           index: 0,
-          routes: [{ name: 'ChildScreen1' }],
+          routes: [{ name: 'CarApp' }],
         }),
       );
     }, 2000);
@@ -24,7 +24,7 @@ const SplashScreen = () => {
       }}
     >
       <Image
-        source={require('../assets/superapp.png')}
+        source={require('../assets/car.png')}
         style={{ height: 300, width: 300 }}
       ></Image>
     </View>

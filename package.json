@@ -1,6 +1,6 @@
 {
   "name": "rn-first-mini-app",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "private": false,
   "scripts": {
     "android": "react-native run-android",

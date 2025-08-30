@@ -7,18 +7,26 @@ const Stack = createNativeStackNavigator();
 
 function RootStack({ initialProps }: { initialProps: any }) {
   return (
-    <Stack.Navigator initialRouteName="Splash">
+    <Stack.Navigator
+      initialRouteName="Splash"
+      screenOptions={{ headerShown: true }}
+    >
       <Stack.Screen
         name="Splash"
         component={SplashScreen}
         options={{ headerShown: false }}
       />
       <Stack.Screen
-        name="ChildScreen1"
+        name="CarApp"
         component={ChildScreen1}
         initialParams={initialProps}
+        options={{ headerBackVisible: false }}
       />
-      <Stack.Screen name="ChildScreen2" component={ChildScreen2} />
+      <Stack.Screen
+        name="Screen2"
+        component={ChildScreen2}
+        options={{ headerShown: true }}
+      />
     </Stack.Navigator>
   );
 }
