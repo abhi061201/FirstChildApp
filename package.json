@@ -1,7 +1,7 @@
 {
-  "name": "FirstChildApp",
+  "name": "rn-first-mini-app",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -38,7 +38,7 @@
     "react-test-renderer": "19.1.0",
     "typescript": "^5.8.3"
   },
-  "files":[
+  "files": [
     "src",
     "package.json",
     "App.tsx",
@@ -46,5 +46,17 @@
   ],
   "engines": {
     "node": ">=20"
-  }
+  },
+  "description": "\"Hi i am first mini app\"",
+  "main": "App.tsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhi061201/FirstChildApp.git"
+  },
+  "author": "abhishek-gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhi061201/FirstChildApp/issues"
+  },
+  "homepage": "https://github.com/abhi061201/FirstChildApp#readme"
 }
